@@ -217,8 +217,6 @@ showNote = (item) => {
 
     icomEdit.addEventListener("click", (evt) => {
         evt.preventDefault();
-        console.log(evt.className)
-        console.log("excluir p1")
         editModal(item);
 
     } )
