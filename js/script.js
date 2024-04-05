@@ -25,7 +25,12 @@ btnCloseNote.addEventListener("click", (evt) =>{
     addNote.style.display = "block";
     document.querySelector("#input-id").value = "";
 
-    cleanButons();
+    let teste  = document.querySelector("#input-title").value;
+    document.querySelector("#input-title").value = "";
+    document.querySelector("#input-content").value = "";
+    console.log("fechou e deveria ter limpado 2")
+    console.log("limpo" + teste);
+
 })
 
 const cleanButons = () => {
@@ -119,7 +124,7 @@ const listNots = () => {
     let plastTime = document.createElement('p');
     plastTime.className = 'notaData';
     pConbtent.className = 'textNota';
-    plastTime.innerText = "ultima edição:"+ new Date(item.lastTime).toLocaleDateString("pt-BR"); 
+    plastTime.innerText = "Última edição: "+ new Date(item.lastTime).toLocaleDateString("pt-BR"); 
     divCardBody.appendChild(plastTime);  
     notes.appendChild(divCard);
 
@@ -143,8 +148,8 @@ const editModal = (item)=> {
         addNote.style.display = "none";
         modalView.style.display = 'none';
 
-        document.querySelector("#input-title").textContent = "oiiii";
-        document.querySelector("#input-content").textContent = "hahahhahaha"; 
+        document.querySelector("#input-title").textContent = "";
+        document.querySelector("#input-content").textContent = ""; 
 
         document.querySelector("#input-id").value = item.id;
         document.querySelector("#input-title").value =item.tittle;
@@ -206,7 +211,7 @@ showNote = (item) => {
     document.querySelector('#content-note').appendChild(pContetnt);
     let plastTime = document.createElement('p');
     plastTime.className = 'showDate'
-    plastTime.innerText = "ultima edição:"+ new Date(item.lastTime).toLocaleDateString("pt-BR"); 
+    plastTime.innerText = "Última edição: "+ new Date(item.lastTime).toLocaleDateString("pt-BR"); 
     document.querySelector("#content-note").appendChild(plastTime);
 
 
