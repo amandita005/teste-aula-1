@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  header{
+    border-bottom: 1px solid #1b85dc;
+    height: 10vh;
+    display:flex;
+    background-color:  rgb(78, 78, 126); 
+    justify-content: space-around;
+  
+    align-items: center;
+  }
+  
+  #logo{
+    width: 30vw;
+    height: 10vh;
+    padding: 0 4%;
+  }
+  
+  #logo img{
+    height: 8vh;
+  }
+
+  #display{
+    width: 40vw;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+  }
+  
+  #user{
+    width: 30vw;
+  }
+  
+  main{
+    margin: 2vh 2vw;
+    min-height: 80vh;
+  }
+  
+  #notes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .card a{
+    text-decoration: none;
+  }
+  
+  #modal-view{
+    border:1px solid #1b85dc;
+    position: absolute;
+    display:none;
+    width: 90vw;
+ 
+   
+  }
+  
+  #close-modal{
+    float:right;
+  }
+  
+  #modal{
+    border:1px solid #1b85dc;
+    position: absolute;
+    padding:2vh 2vw;
+    display:none;
+    width: 90vw;
+  }
+  
+  #controls-note{
+    display:flex;
+    gap:10px;
+  }
+  
+  .card{
+    padding: 8px;
+    background-color:
+     rgb(78, 78, 126);
+     border-radius: 10px;
+     margin: 8px auto;
+    
+  }
+
+  .CardBody{
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+
+  .CardBody h1{
+    background-color: rgb(130, 130, 185); 
+    border-radius: 5px 5px 0 0;
+    padding: 2%;
+    align-items: center;
+    border-bottom: 2px solid black;
+    text-align: center;
+  }
+
+.CardBody p{
+  padding: 2%;
+}
+
+
+.notaData{
+  border-top: 1px solid black;
+
+}
+
+#modal-view{
+  border: 13px solid rgb(78, 78, 126);;
+  border-radius: 5px;
+}
+
+#title-note{
+  font-weight: bolder;
+  font-size: 22px;
+  padding: 2% 2%;
+  background-color: rgb(130, 130, 185);;
+}
+
+#content-note .showText {
+  padding: 5%;
+  margin: 5px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+}
+
+#content-note .showDate{
+  text-align: right;
+  font-size: 11px;
+  padding: 0 2%;
+}
+
+.iconsDelEdi{
+   padding: 1%;
+   border-top: 1px solid black;
+}
+
+.iconsDelEdi i{
+  padding: 0 2% ;
+  
+}
+
+.iconapaga{
+  color: black;
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+}
