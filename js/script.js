@@ -218,6 +218,7 @@ showNote = (item) => {
     icomEdit.addEventListener("click", (evt) => {
         evt.preventDefault();
         editModal(item);
+        console.log('amanda amanda');
 
     } )
 
