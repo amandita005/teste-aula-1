@@ -9,7 +9,6 @@
     display:flex;
     background-color:  rgb(78, 78, 126); 
     justify-content: space-around;
-  
     align-items: center;
   }
   
@@ -17,6 +16,7 @@
     width: 30vw;
     height: 10vh;
     padding: 0 4%;
+    padding-top: 5px;
   }
   
   #logo img{
@@ -37,6 +37,7 @@
   main{
     margin: 2vh 2vw;
     min-height: 80vh;
+    
   }
   
   #notes{
@@ -68,6 +69,9 @@
     padding:2vh 2vw;
     display:none;
     width: 90vw;
+    margin-left: 3%;
+    border: 13px solid rgb(78, 78, 126);;
+    border-radius: 5px;
   }
   
   #controls-note{
@@ -122,7 +126,7 @@
 }
 
 #content-note .showText {
-  padding: 5%;
+  padding: 2%;
   margin: 5px;
   background-color: rgb(233, 233, 233);
   border-radius: 5px;
